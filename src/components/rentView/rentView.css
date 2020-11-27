@@ -1,0 +1,61 @@
+.inner-div {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  margin-left: 20px;
+}
+
+.container1 {
+  width: 29%;
+  float: left;
+}
+/* body {
+  overflow: hidden;
+} */
+
+.btn-search {
+  margin-top: 3%;
+  width: 10%;
+  padding: 0.25%;
+}
+
+#headerimage {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: fit-content;
+}
+
+.cardBox1 {
+  display: inline;
+  /* float: right; */
+  /* margin-top: 20px; */
+  margin-left: 10px;
+  width: 100%;
+}
+#cardBox2 {
+  display: inline;
+  /* float: right; */
+  /* margin-top: 20px; */
+  margin-left: 10px;
+  width: 100%;
+}
+#rentContainer {
+  border: 1px solid gray;
+  width: 24%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 650px;
+}
+#cardBoxImage {
+  height: 280px;
+}
+
+.cardBox {
+  display: inline;
+  /* float: right; */
+  /* margin-top: 20px; */
+  margin-left: 10px;
+}
