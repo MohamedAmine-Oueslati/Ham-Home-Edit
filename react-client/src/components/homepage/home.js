@@ -10,7 +10,7 @@ class Home extends React.Component {
     return (
         <div>
         <HamNav loggedIn={false} />
-        <img id="logo" src={logo} />
+        <img id="logo" src={logo} alt="logo" />
         </div>
     );
   }

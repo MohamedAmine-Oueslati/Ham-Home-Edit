@@ -150,7 +150,7 @@ class ProfileView extends React.Component {
                   <img
                     src="https://meetanentrepreneur.lu/wp-content/uploads/2019/08/profil-linkedin.jpg"
                     width="400px"
-                    alt=""
+                    alt="house"
                   />
                 </div>
               </div>
@@ -164,6 +164,7 @@ class ProfileView extends React.Component {
                         <img
                           src="https://cdn.onlinewebfonts.com/svg/img_259698.png"
                           width="30px"
+                          alt="house"
                         />
                       </h6>
                       <p className="m-0px font-w-600">Post</p>
@@ -199,6 +200,7 @@ class ProfileView extends React.Component {
                         <img
                           src="https://icons-for-free.com/iconfiles/png/512/refresh+reload+update+icon-1320191166843452904.png"
                           width="30px"
+                          alt="house"
                         />
                       </h6>
                       <p className="m-0px font-w-600">Update</p>

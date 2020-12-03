@@ -7,21 +7,7 @@ import ProfileView from "../profileView/profileView";
 // import ContentEditable from 'react-contenteditable'
 import $ from "jquery";
 import axios from "axios";
-import {
-  // Form,
-  // Button,
-  // FormGroup,
-  // FormControl,
-  // ControlLabel,
-  // Col,
-  // FormLabel,
-  Navbar,
-  Nav,
-  // Card,
-  // Carousel,
-  // CarouselItem,
-  // Accordion,
-} from "react-bootstrap";
+import {Navbar,Nav} from "react-bootstrap";
 class UpdatePost extends React.Component {
   constructor(props) {
     super(props);
@@ -85,7 +71,7 @@ class UpdatePost extends React.Component {
       return (
         <div className="profilePosts1" id="updateDiv" key={i}>
           <p className="postDetails">
-            <img src={item.imagesrc} width="280px" height="170px" />
+            <img src={item.imagesrc} width="280px" height="170px" alt="house"/>
           </p>
           <p>
             Price :{" "}

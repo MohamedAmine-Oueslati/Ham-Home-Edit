@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import HamNav from "./nav";
 
 class Login extends Component {
-  // seeSelectAction() {
-  //   window.location = '/SelectAction'
-  // }
 
   render() {
     return (
@@ -50,7 +47,7 @@ class Login extends Component {
             </button>
           </Link>
           <p className="forgot-password text-right">
-            Forgot <a href="">password?</a>
+            Forgot <a href="/Login">password?</a>
           </p>
         </form>
       </div>

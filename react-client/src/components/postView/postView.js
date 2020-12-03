@@ -7,9 +7,7 @@ import {
   InputGroup,
   Form,
   Button,
-  Col,
-  Nav,
-  Navbar,
+  Col
 } from "react-bootstrap";
 import $ from "jquery";
 import axios from "axios";
@@ -54,14 +52,6 @@ class PostView extends React.Component {
       });
       ReactDOM.render(<ProfileView />, document.getElementById("app"));
     }
-  }
-
-  seeProfile() {
-    window.location = '/profile'
-  }
-
-  logout() {
-    window.location = '/'
   }
 
   render() {

@@ -1,24 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import ProfileView from "../profileView/profileView";
-import SelectAction from "../selectAction/selectAction";
+import io from 'socket.io-client'
 import HamNav from "../homepage/nav";
 import axios from "axios";
 import $ from "jquery";
 import "regenerator-runtime/runtime";
 import {
-  Form,
   Button,
-  FormGroup,
-  FormControl,
-  ControlLabel,
-  Col,
-  FormLabel,
-  Navbar,
-  Nav,
   Card,
   Carousel,
-  CarouselItem,
   Accordion,
 } from "react-bootstrap";
 
@@ -26,13 +15,6 @@ class SearchedHome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-  }
-
-  seeProfile() {
-    ReactDOM.render(<ProfileView />, document.getElementById("app"));
-  }
-  seeSelectAction() {
-    ReactDOM.render(<SelectAction />, document.getElementById("app"));
   }
 
   async chat() {
@@ -62,6 +44,7 @@ class SearchedHome extends React.Component {
     // $("#output").html("");
     resultmsg.map((msg, i) => {
       socket.emit("chat", { message: msg.message, handle: msg.sender });
+      return "msg sent"
     });
     btn.addEventListener("click", function () {
       if ($("#message").val() && $("#handle").val()) {
@@ -114,8 +97,7 @@ class SearchedHome extends React.Component {
       return (
         <Carousel.Item>
           <img
-            className="imagecaroussel"
-            className="d-block w-100"
+            className="imagecaroussel d-block w-100"
             src={item}
             alt="First slide"
           />

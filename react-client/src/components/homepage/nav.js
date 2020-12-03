@@ -1,13 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../../App.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 class HamNav extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div>
